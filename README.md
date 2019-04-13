@@ -25,3 +25,26 @@ sudo usermod -aG docker username
 https://www.virtualbox.org/wiki/Downloads #download VirtualBox
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
 ```
+
+##Step 2:加入Laradock
+
+```
+git submodule add --force https://github.com/JamesShieh0510/laradock.git
+```
+
+##Step 3:啟動Laradock
+
+```
+cd laradock
+. ./start.sh
+```
+
+###補充
+
+```
+#停止docker
+. ./stop.sh 
+#重新載入資料庫
+../update-database.sh
+```
+
